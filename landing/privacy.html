@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101012">
+  <title>Privacy Policy — Aurora</title>
+  <meta name="description" content="How Aurora handles video files, AI keys, purchase information, and waitlist email addresses.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Privacy Policy — Aurora">
+  <meta property="og:description" content="How Aurora handles video files, AI keys, purchase information, and waitlist email addresses.">
+  <meta property="og:url" content="https://dinethnethsaramusic-code.github.io/aurora-landing/privacy.html">
+  <link rel="canonical" href="https://dinethnethsaramusic-code.github.io/aurora-landing/privacy.html">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./extras.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="wrap nav"><a class="brand" href="./index.html" aria-label="Aurora home"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Aurora<span class="brand-dot">.</span></span></a><nav aria-label="Main navigation"><a href="./index.html#how-it-works">How it works</a><a href="./index.html#features">Features</a><a href="./index.html#faq">FAQ</a></nav><a class="nav-cta" href="./index.html#availability">Explore availability <span aria-hidden="true">↗</span></a></div></header>
+  <main id="main"><section class="legal-hero"><div class="wrap"><span class="kicker">AURORA / LEGAL</span><h1>Privacy Policy.</h1><p>What stays on your computer, what goes to services you choose, and what purchase data we may receive.</p></div></section><article class="wrap legal-body">
+    <p class="legal-meta">Last updated: 11 November 2026</p>
+    <p class="legal-alert">Draft for store review. [TODO: verify every data flow in the shipping build, add the seller’s legal identity and contact details, and have a qualified lawyer review this policy before collecting customer data.]</p>
+    <h2>1. Who is responsible</h2><p>Aurora is offered by [TODO: your legal name] trading as Aurora, based in Sri Lanka. Contact us at <a href="mailto:support@example.com">[TODO: your support email]</a> about privacy questions. [TODO: add a mailing address and any legally required privacy contact.]</p>
+    <h2>2. Video files and projects</h2><p>At launch, Aurora imports local video files you choose on your computer. Source footage and generated clips stay on your device; the app does not upload them to servers operated by us. Transcription is intended to run locally. [TODO: confirm local transcription in the shipping build, storage locations, retention and deletion controls.] Optional processing on your own cloud server is not part of the launch offer. [TODO: document cloud-worker data flows before offering it.]</p>
+    <h2>3. Your AI provider key</h2><p>You enter your own compatible AI provider API key in Aurora. The key is stored on your device and is never sent to servers operated by us. Aurora sends the key and the content needed for processing directly from your computer to the provider you choose. That provider’s data handling and charges are governed by its own terms. [TODO: confirm whether requests contain transcript text only or also frame samples or other data; verify key storage on every supported operating system.]</p>
+    <h2>4. Purchases, licenses, and updates</h2><p>When sales open, Lemon Squeezy will collect your payment and billing details and email your receipt and license key as merchant of record. We receive your name, email, and order details through Lemon Squeezy to provide support. We do not receive full payment card numbers. [TODO: confirm the exact Lemon Squeezy data fields shared with us and their retention.]</p><p>Aurora sends license activation, validation, and deactivation requests directly to Lemon Squeezy. These requests include the license key, a hashed device identifier, and an instance ID; Lemon Squeezy also sees your IP address as part of the request. Aurora does not send these requests to servers operated by us. [TODO: confirm the precise request fields, hash construction, frequency, retention, and offline behavior in the shipping build.]</p><p>Aurora fetches a static update manifest from [TODO: GitHub Pages or Cloudflare Pages]. The hosting provider can receive standard request data such as IP address and browser or app information. No usage analytics or crash reporting is intended. [TODO: verify the release build has no analytics, crash reporting, or other telemetry.]</p>
+    <h2>5. Waitlist and website</h2><p>The waitlist form is disabled until a mailing-list provider is connected. If you later subscribe, we will use your email only for Aurora release updates, and you can unsubscribe through any waitlist email. [TODO: name MailerLite or Brevo, link its privacy policy, describe retention, and confirm consent wording before enabling the form.] GitHub Pages hosts this website and may process standard request data such as IP addresses and browser information to serve it. [TODO: review GitHub Pages data handling and any analytics or cookies added later.]</p>
+    <h2>6. Retention and your choices</h2><p>You can remove locally stored projects and keys from your device. For purchase, license, or waitlist information held by us or our providers, email <a href="mailto:support@example.com">[TODO: support email]</a> to request access, correction, or deletion where applicable. We may need to keep some transaction records for legal or accounting reasons. [TODO: state retention periods, legal basis, international transfers, and applicable rights after legal review.]</p>
+    <h2>7. Updates to this policy</h2><p>We will post changes here with a new last-updated date. Material changes to data handling should be explained before they take effect. [TODO: confirm customer notification process.]</p>
+  </article></main>
+  <footer class="footer legal-footer"><div class="wrap footer-inner"><a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Aurora<span class="brand-dot">.</span></span></a><p>More from every moment.</p><nav class="footer-links" aria-label="Legal and support"><a href="./terms.html">Terms</a><a href="./privacy.html" aria-current="page">Privacy</a><a href="./refund.html">Refund Policy</a><a href="mailto:support@example.com">Support: [TODO: email]</a></nav></div></footer>
+</body>
+</html>
