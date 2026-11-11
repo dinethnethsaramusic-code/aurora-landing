@@ -2,6 +2,8 @@
 html { scroll-padding-top: 78px; }
 
 @media (min-width: 1001px) {
+  .faq { grid-template-columns: minmax(0, 35%) minmax(0, 1fr); }
+  .details { grid-template-columns: minmax(0, 38%) minmax(0, 1fr); }
   .hero { grid-template-columns: minmax(0, 48%) minmax(0, 52%); gap: 0; }
   .hero h1 { font-size: clamp(50px, 5.3vw, 66px); white-space: normal; }
 }
