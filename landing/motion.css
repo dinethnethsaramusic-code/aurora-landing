@@ -1,5 +1,6 @@
 /* Motion stays inside the illustrative workflow; it does not imply real footage. */
 section[id]{scroll-margin-top:76px}
+.hero-demo{margin:0}
 .demo-flow{display:flex;flex-direction:column;gap:13px;min-height:0;padding:22px 22px 26px}
 .demo-source{box-sizing:border-box;width:100%;min-width:0;min-height:116px;aspect-ratio:auto;padding:14px 17px}
 .demo-placeholder{font-size:20px}
