@@ -55,7 +55,7 @@
     if (!plan) return;
     const label = button.querySelector("[data-buy-label]");
     button.href = document.querySelector("[data-waitlist-section]") ? "#waitlist" : "./index.html#waitlist";
-    if (label) label.textContent = "Join the waitlist";
+    if (label) label.textContent = "Check availability";
     const checkoutUrl = config.checkoutUrls[`CHECKOUT_URL_${button.dataset.planButton.toUpperCase()}`];
     if (!checkoutUrl.trim()) { needsWaitlist = true; return; }
     try {
@@ -70,7 +70,7 @@
       }
     } catch (error) {
       needsWaitlist = true;
-      console.error(`Invalid ${plan.name} checkout URL; keeping waitlist link.`, error);
+      console.error(`Invalid ${plan.name} checkout URL; keeping availability link.`, error);
     }
   });
   const waitlist = document.querySelector("[data-waitlist-section]");

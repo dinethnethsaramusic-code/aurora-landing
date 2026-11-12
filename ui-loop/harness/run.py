@@ -29,7 +29,9 @@ def inspect_page(page):
       const text = s => document.querySelector(s)?.textContent.trim() || '';
       const buttons = [...document.querySelectorAll('[data-plan-button]')].map(x => ({plan:x.dataset.planButton,label:x.querySelector('[data-buy-label]')?.textContent.trim(),href:x.getAttribute('href')}));
       const target = x => {const r=x.getBoundingClientRect();return {text:x.textContent.trim().slice(0,40),width:Math.round(r.width),height:Math.round(r.height)}};
-      return {title:document.title,h1:text('h1'),heroLead:text('.hero .lead'),meta:document.querySelector('meta[name=description]')?.content||'',buttons,heroCta:target(document.querySelector('.hero .button-primary')),waitlistDisabled:!!document.querySelector('.waitlist-form button:disabled'),overflow:document.documentElement.scrollWidth>innerWidth,brokenAnchors:[...document.querySelectorAll('a[href^="#"]')].filter(x=>!document.getElementById(x.getAttribute('href').slice(1))).map(x=>x.getAttribute('href')),focusTargets:[...document.querySelectorAll('.header-link,.price-card .button,.faq-list summary,.site-footer nav a')].map(target).filter(x=>x.width<44||x.height<44)};
+      const form = document.querySelector('.waitlist-form[action]');
+      const signupReady = !!form && !form.action.includes('TODO_') && !!form.querySelector('button[type="submit"]:not(:disabled)');
+      return {title:document.title,h1:text('h1'),heroLead:text('.hero .lead'),meta:document.querySelector('meta[name=description]')?.content||'',buttons,heroCta:target(document.querySelector('.hero .button-primary')),signupReady,overflow:document.documentElement.scrollWidth>innerWidth,brokenAnchors:[...document.querySelectorAll('a[href^="#"]')].filter(x=>!document.getElementById(x.getAttribute('href').slice(1))).map(x=>x.getAttribute('href')),focusTargets:[...document.querySelectorAll('.header-link,.price-card .button,.faq-list summary,.site-footer nav a')].map(target).filter(x=>x.width<44||x.height<44)};
     }""")
 
 
@@ -70,13 +72,13 @@ def run(url, label):
         "no_console_errors": not report["console_errors"],
         "tap_targets_44px": not report["viewports"][0]["focusTargets"],
         "reduced_motion_off": report["reduced_motion"]["scroll"] != "smooth" and all(value == "0s" for value in report["reduced_motion"]["animations"]),
-        "checkout_or_waitlist_usable": any(v["buttons"] and any(not b["href"].startswith("#waitlist") for b in v["buttons"]) or not v["waitlistDisabled"] for v in report["viewports"]),
+        "checkout_or_waitlist_usable": any(v["buttons"] and any(not b["href"].startswith("#waitlist") for b in v["buttons"]) or v["signupReady"] for v in report["viewports"]),
     }
     (cards / f"{label}.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
     lines = [f"# {label} — Aurora Clips page", "", f"Source: {url}", f"Captured: {report['timestamp_utc']}", "", "| Check | Result |", "| --- | --- |"]
     lines += [f"| {key} | {'pass' if value else 'fail'} |" for key, value in report["checks"].items()]
-    lines += ["", "| Width | Hero CTA | Plan CTAs | Waitlist disabled |", "| ---: | --- | --- | --- |"]
-    lines += [f"| {v['width']} | {v['heroCta']['text']} | {', '.join(b['label'] for b in v['buttons'])} | {v['waitlistDisabled']} |" for v in report["viewports"]]
+    lines += ["", "| Width | Hero CTA | Plan CTAs | Signup ready |", "| ---: | --- | --- | --- |"]
+    lines += [f"| {v['width']} | {v['heroCta']['text']} | {', '.join(b['label'] for b in v['buttons'])} | {v['signupReady']} |" for v in report["viewports"]]
     lines += ["", "## Screenshots", ""] + [f"- `{path}`" for path in report["screenshots"]]
     lines += ["", "## Exceptions", "", f"Console errors: {report['console_errors']}", f"Failed requests: {report['failed_requests']}", f"Small tap targets at 375px: {report['viewports'][0]['focusTargets']}"]
     (cards / f"{label}.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
