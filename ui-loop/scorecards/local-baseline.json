@@ -1,0 +1,546 @@
+{
+  "label": "local-baseline",
+  "source": "http://127.0.0.1:53322/",
+  "timestamp_utc": "2026-11-12T15:56:53.272748+00:00",
+  "viewports": [
+    {
+      "title": "Aurora Clips \u2014 More shorts from the videos you already made",
+      "h1": "More shorts from the videos you already made.",
+      "heroLead": "Turn a long recording into captioned vertical clips on your Windows PC. Pay once for Aurora Clips. Bring your own AI key.",
+      "meta": "Aurora Clips: Lifetime $129 once, Yearly $79/year, or Monthly $12.99/month. Turn long videos into captioned clips on your Windows PC.",
+      "buttons": [
+        {
+          "plan": "lifetime",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "lifetime",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "yearly",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "monthly",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "lifetime",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "lifetime",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        }
+      ],
+      "heroCta": {
+        "text": "Join the waitlist\u2197",
+        "width": 183,
+        "height": 48
+      },
+      "waitlistDisabled": true,
+      "overflow": false,
+      "brokenAnchors": [],
+      "focusTargets": [
+        {
+          "text": "See the offer \u2197",
+          "width": 115,
+          "height": 39
+        },
+        {
+          "text": "Which plan should I choose?",
+          "width": 339,
+          "height": 23
+        },
+        {
+          "text": "Will it run on my PC?",
+          "width": 339,
+          "height": 23
+        },
+        {
+          "text": "How much will the AI provider cost?",
+          "width": 339,
+          "height": 23
+        },
+        {
+          "text": "Do I need my own AI key?",
+          "width": 339,
+          "height": 23
+        },
+        {
+          "text": "Can I get a refund?",
+          "width": 339,
+          "height": 23
+        },
+        {
+          "text": "Can I clip from YouTube or Twitch?",
+          "width": 339,
+          "height": 23
+        },
+        {
+          "text": "Is there a Mac version?",
+          "width": 339,
+          "height": 23
+        },
+        {
+          "text": "What leaves my machine?",
+          "width": 339,
+          "height": 23
+        },
+        {
+          "text": "Terms",
+          "width": 36,
+          "height": 19
+        },
+        {
+          "text": "Privacy",
+          "width": 44,
+          "height": 19
+        },
+        {
+          "text": "Refund",
+          "width": 42,
+          "height": 19
+        },
+        {
+          "text": "Support: [TODO: email]",
+          "width": 135,
+          "height": 19
+        }
+      ],
+      "width": 375,
+      "http_status": 200
+    },
+    {
+      "title": "Aurora Clips \u2014 More shorts from the videos you already made",
+      "h1": "More shorts from the videos you already made.",
+      "heroLead": "Turn a long recording into captioned vertical clips on your Windows PC. Pay once for Aurora Clips. Bring your own AI key.",
+      "meta": "Aurora Clips: Lifetime $129 once, Yearly $79/year, or Monthly $12.99/month. Turn long videos into captioned clips on your Windows PC.",
+      "buttons": [
+        {
+          "plan": "lifetime",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "lifetime",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "yearly",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "monthly",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "lifetime",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "lifetime",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        }
+      ],
+      "heroCta": {
+        "text": "Join the waitlist\u2197",
+        "width": 183,
+        "height": 48
+      },
+      "waitlistDisabled": true,
+      "overflow": false,
+      "brokenAnchors": [],
+      "focusTargets": [
+        {
+          "text": "See the offer \u2197",
+          "width": 115,
+          "height": 39
+        },
+        {
+          "text": "Which plan should I choose?",
+          "width": 329,
+          "height": 23
+        },
+        {
+          "text": "Will it run on my PC?",
+          "width": 329,
+          "height": 23
+        },
+        {
+          "text": "How much will the AI provider cost?",
+          "width": 329,
+          "height": 23
+        },
+        {
+          "text": "Do I need my own AI key?",
+          "width": 329,
+          "height": 23
+        },
+        {
+          "text": "Can I get a refund?",
+          "width": 329,
+          "height": 23
+        },
+        {
+          "text": "Can I clip from YouTube or Twitch?",
+          "width": 329,
+          "height": 23
+        },
+        {
+          "text": "Is there a Mac version?",
+          "width": 329,
+          "height": 23
+        },
+        {
+          "text": "What leaves my machine?",
+          "width": 329,
+          "height": 23
+        },
+        {
+          "text": "Terms",
+          "width": 36,
+          "height": 19
+        },
+        {
+          "text": "Privacy",
+          "width": 44,
+          "height": 19
+        },
+        {
+          "text": "Refund",
+          "width": 42,
+          "height": 19
+        },
+        {
+          "text": "Support: [TODO: email]",
+          "width": 135,
+          "height": 19
+        }
+      ],
+      "width": 768,
+      "http_status": 200
+    },
+    {
+      "title": "Aurora Clips \u2014 More shorts from the videos you already made",
+      "h1": "More shorts from the videos you already made.",
+      "heroLead": "Turn a long recording into captioned vertical clips on your Windows PC. Pay once for Aurora Clips. Bring your own AI key.",
+      "meta": "Aurora Clips: Lifetime $129 once, Yearly $79/year, or Monthly $12.99/month. Turn long videos into captioned clips on your Windows PC.",
+      "buttons": [
+        {
+          "plan": "lifetime",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "lifetime",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "yearly",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "monthly",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "lifetime",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "lifetime",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        }
+      ],
+      "heroCta": {
+        "text": "Join the waitlist\u2197",
+        "width": 183,
+        "height": 48
+      },
+      "waitlistDisabled": true,
+      "overflow": false,
+      "brokenAnchors": [],
+      "focusTargets": [
+        {
+          "text": "See the offer \u2197",
+          "width": 115,
+          "height": 39
+        },
+        {
+          "text": "Which plan should I choose?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "What happens if I cancel a subscription?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "Can I switch from monthly to lifetime la",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "Will it run on my PC?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "How much will the AI provider cost?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "Do I need my own AI key?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "How many devices can use one license?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "What happens after 1.x updates end on th",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "Can I get a refund?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "Can I clip from YouTube or Twitch?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "Is there a Mac version?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "How is this different from a cloud clipp",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "What leaves my machine?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "Terms",
+          "width": 36,
+          "height": 19
+        },
+        {
+          "text": "Privacy",
+          "width": 44,
+          "height": 19
+        },
+        {
+          "text": "Refund",
+          "width": 42,
+          "height": 19
+        },
+        {
+          "text": "Support: [TODO: email]",
+          "width": 135,
+          "height": 19
+        }
+      ],
+      "width": 1280,
+      "http_status": 200
+    },
+    {
+      "title": "Aurora Clips \u2014 More shorts from the videos you already made",
+      "h1": "More shorts from the videos you already made.",
+      "heroLead": "Turn a long recording into captioned vertical clips on your Windows PC. Pay once for Aurora Clips. Bring your own AI key.",
+      "meta": "Aurora Clips: Lifetime $129 once, Yearly $79/year, or Monthly $12.99/month. Turn long videos into captioned clips on your Windows PC.",
+      "buttons": [
+        {
+          "plan": "lifetime",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "lifetime",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "yearly",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "monthly",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "lifetime",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        },
+        {
+          "plan": "lifetime",
+          "label": "Join the waitlist",
+          "href": "#waitlist"
+        }
+      ],
+      "heroCta": {
+        "text": "Join the waitlist\u2197",
+        "width": 183,
+        "height": 48
+      },
+      "waitlistDisabled": true,
+      "overflow": false,
+      "brokenAnchors": [],
+      "focusTargets": [
+        {
+          "text": "See the offer \u2197",
+          "width": 115,
+          "height": 39
+        },
+        {
+          "text": "Which plan should I choose?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "What happens if I cancel a subscription?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "Can I switch from monthly to lifetime la",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "Will it run on my PC?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "How much will the AI provider cost?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "Do I need my own AI key?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "How many devices can use one license?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "What happens after 1.x updates end on th",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "Can I get a refund?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "Can I clip from YouTube or Twitch?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "Is there a Mac version?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "How is this different from a cloud clipp",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "What leaves my machine?",
+          "width": 718,
+          "height": 23
+        },
+        {
+          "text": "Terms",
+          "width": 36,
+          "height": 19
+        },
+        {
+          "text": "Privacy",
+          "width": 44,
+          "height": 19
+        },
+        {
+          "text": "Refund",
+          "width": 42,
+          "height": 19
+        },
+        {
+          "text": "Support: [TODO: email]",
+          "width": 135,
+          "height": 19
+        }
+      ],
+      "width": 1920,
+      "http_status": 200
+    }
+  ],
+  "console_errors": [],
+  "failed_requests": [],
+  "screenshots": [
+    "ui-loop/screenshots/local-baseline-375-fold.png",
+    "ui-loop/screenshots/local-baseline-375-full.png",
+    "ui-loop/screenshots/local-baseline-768-fold.png",
+    "ui-loop/screenshots/local-baseline-768-full.png",
+    "ui-loop/screenshots/local-baseline-1280-fold.png",
+    "ui-loop/screenshots/local-baseline-1280-full.png",
+    "ui-loop/screenshots/local-baseline-1920-fold.png",
+    "ui-loop/screenshots/local-baseline-1920-full.png"
+  ],
+  "reduced_motion": {
+    "scroll": "auto",
+    "animations": [
+      "0s",
+      "0s",
+      "0s"
+    ]
+  },
+  "checks": {
+    "all_http_200": true,
+    "no_overflow": true,
+    "no_broken_page_anchors": true,
+    "no_console_errors": true,
+    "tap_targets_44px": false,
+    "reduced_motion_off": true,
+    "checkout_or_waitlist_usable": false
+  }
+}
