@@ -1,4 +1,5 @@
 /* Motion stays inside the illustrative workflow; it does not imply real footage. */
+section[id]{scroll-margin-top:76px}
 .demo-flow{grid-template-columns:minmax(0,1fr) 18px minmax(0,1fr)}
 .demo-source,.demo-outputs,.demo-outputs>div{min-width:0}
 .demo-bar{transform-origin:left center;animation:source-progress 6s ease-in-out infinite}
