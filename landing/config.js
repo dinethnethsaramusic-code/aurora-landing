@@ -1,3 +1,15 @@
-// Set this to the verified live Lemon Squeezy checkout URL when sales open.
-// Keep test-mode checkout URLs out of the published landing page.
-const CHECKOUT_URL = "https://auroraclip.lemonsqueezy.com/checkout/buy/1c65ad1d-9526-4fca-acac-8c50ed2491f5";
+// Edit plan details here. Use only verified live checkout URLs; never commit test-mode links.
+const AURORA_PRICING = Object.freeze({
+  currency: "USD",
+  launchEndDate: "", // [TODO: launch end date, YYYY-MM-DD]; leave empty until confirmed.
+  checkoutUrls: Object.freeze({
+    CHECKOUT_URL_LIFETIME: "",
+    CHECKOUT_URL_YEARLY: "",
+    CHECKOUT_URL_MONTHLY: ""
+  }),
+  plans: Object.freeze({
+    lifetime: Object.freeze({name: "Lifetime", price: 129, afterLaunchPrice: 149, period: "one time"}),
+    yearly: Object.freeze({name: "Yearly", price: 79, period: "per year"}),
+    monthly: Object.freeze({name: "Monthly", price: 12.99, period: "per month"})
+  })
+});

@@ -95,16 +95,24 @@ em{font-style:normal;color:#80ad4f}
 .requirements-panel .todo,.price-card .todo{color:#ffcf84}
 .offer-grid>div:first-child>p:not(.kicker){color:#596154;max-width:470px}
 .offer-caveat{border-left:3px solid #799c49;padding-left:14px;font-size:13px;line-height:1.6;margin-top:30px}
+.plan-grid{display:grid;gap:15px;align-items:stretch}
 .price-card{background:var(--ink);color:#f5f8f1;border-radius:16px;padding:29px}
+.price-card-featured{border:2px solid #8dc84a;box-shadow:0 20px 46px #25331d18}
+.price-card h3{font-size:24px;margin-bottom:16px}
 .price-label{color:var(--lime);margin-bottom:21px}
 .price{font:600 clamp(30px,5vw,46px)/1.1 var(--font-display);letter-spacing:-.05em;margin-bottom:7px}
+.price small{font:600 12px var(--font-body);letter-spacing:0;color:#bfcbba;white-space:nowrap}
 .price-context{color:#c1cbbb;font-size:13px}
+.plan-description,.launch-note{font-size:13px;color:#c1cbbb;margin:9px 0 0}
+.launch-note{color:var(--lime)}
 .price-card ul{border-top:1px solid var(--dark-line);margin:23px 0}
 .price-card li{border-bottom:1px solid var(--dark-line);padding:10px 0 10px 23px;position:relative;font-size:13px}
 .price-card li:before{content:'✓';position:absolute;left:0;color:var(--lime)}
 .price-card .button{width:100%}
 .price-card .cta-note{margin-bottom:0}
 .payment-note{font-size:11px;color:#aebaae;margin:12px 0 0}
+.price-comparison{font:600 16px/1.5 var(--font-display);margin:23px 0 0}
+.offer>.wrap>.offer-caveat{max-width:760px}
 .waitlist-section{background:#dfe9d5;padding:50px 0}
 .waitlist-grid{display:grid;gap:18px}
 .waitlist-section h2{font-size:36px}
@@ -134,5 +142,6 @@ em{font-style:normal;color:#80ad4f}
 .mobile-buy small{color:#c8d2c3;text-align:center;font-size:10px}
 @media(min-width:700px){.wrap{width:min(1160px,calc(100% - 56px))}.header-inner{height:76px}.section{padding:105px 0}.hero{padding:95px 0 85px}.hero-grid{grid-template-columns:1.05fr .95fr;gap:35px}.split-heading,.requirements-grid,.ownership-grid,.offer-grid,.faq-grid,.final-grid{grid-template-columns:1fr 1fr;gap:55px}.process-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}.process-list li{grid-template-columns:1fr;min-height:225px}.proof-grid{grid-template-columns:1.1fr .9fr;align-items:end}.waitlist-grid{grid-template-columns:1fr 1fr;align-items:center;gap:30px}.site-footer{padding-bottom:38px}.footer-grid{grid-template-columns:1fr 1fr;align-items:center}.footer-grid nav{justify-content:flex-end}.footer-grid small{grid-column:2;text-align:right}.mobile-buy{display:none}}
 @media(min-width:1000px){.hero-grid{gap:70px}.site-nav{display:flex;gap:31px}.requirements-grid,.offer-grid{grid-template-columns:1fr .9fr}.faq-grid{grid-template-columns:.7fr 1.3fr}.final-grid{grid-template-columns:1.3fr .7fr}}
+@media(min-width:800px){.plan-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.price-card{display:flex;flex-direction:column}.price-card ul{flex:1}.price-card .button{margin-top:auto}}
 @media(max-width:420px){.demo-flow{grid-template-columns:1fr;gap:9px}.demo-arrow{transform:rotate(90deg)}.demo-outputs{height:170px}.hero{padding-top:58px}.waitlist-form>div{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}.button:hover{transform:none}}

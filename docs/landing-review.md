@@ -4,7 +4,7 @@
 
 **Buyer:** Solo creators, streamers, podcasters, and small-channel editors who already have long recordings, use Windows, and are comfortable bringing an AI provider key.
 
-**Main promise:** Make more captioned vertical clips from the footage you already own, on your own PC, for one Aurora payment.
+**Main promise:** Make more captioned vertical clips from the footage you already own, on your own PC, with lifetime and subscription choices.
 
 **Top objections:** (1) Will it make clips from my recordings? (2) How much setup is involved? (3) What else will I pay? (4) Can I trust the output without examples? (5) What happens to my files, license, and money after purchase?
 
@@ -16,8 +16,8 @@
 | Proof | Does it work? | Clearly labeled real-footage and screenshot slots; no invented results. |
 | Why pay once | What do I get versus a subscription? | License continuity, no Aurora minute meter, local-file control. |
 | Requirements | What's the catch? | Windows, AI provider charges, beta features, and who should not buy. |
-| Pricing | What exactly is the offer? | One-time license, 1.x updates, two devices, refund, and delivery status. |
-| FAQ | What could stop me? | Ten direct answers to setup, cost, rights, Mac, privacy, and license questions. |
+| Pricing | What exactly is the offer? | Lifetime, Yearly, and Monthly plans; terms, refund, and delivery status. |
+| FAQ | What could stop me? | Direct answers to setup, cost, rights, Mac, privacy, cancellation, and license questions. |
 | Final CTA | Is it safe to decide? | Refund and device terms immediately under the CTA; delivery warning visible. |
 
 ## Copy options
@@ -28,17 +28,18 @@ Alternative hero A: “Turn your long recording into clips worth reviewing.” C
 
 Alternative hero B: “Your next short is already in your last video.” CTA: “See the clipping workflow.”
 
-**Recommended pricing:** “Pay once. Keep creating.” CTA: “Buy Aurora Clips” (or “Join the waitlist” when checkout is empty). It says the key commercial distinction in five words.
+**Current pricing section:** “Start with the plan that fits.” Lifetime leads the three cards; Yearly and Monthly are lower-commitment alternatives. Each button uses its own URL or the waitlist.
 
 Alternative pricing A: “One Aurora payment. More clips from your footage.” CTA: “Get the one-time license.”
 
-Alternative pricing B: “Keep your version. Skip the Aurora subscription.” CTA: “Review the license.”
+Alternative pricing B: “Keep your version or stay subscribed.” CTA: “Compare the plans.”
 
-Every purchase CTA has adjacent microcopy: “14-day refund · 2 devices · no subscription.” The hero and final CTA also carry the delivery warning. The pricing card repeats the warning near the payment link. The header links to the offer rather than directly to checkout.
+The Lifetime CTAs carry the lifetime reassurance line. Each plan card states its own refund window, two-device limit, and absence of per-minute credits. The header links to the offer rather than directly to checkout.
 
 ## Replace before launch
 
-- `[TODO: price]` in the offer. Use the actual one-time price and currency shown at checkout.
+- Set the three verified live checkout URLs in `landing/config.js`; all are empty by default. Confirm their checkout amounts match the config prices.
+- Set `[TODO: launch end date, YYYY-MM-DD]` in `landing/config.js` only after the date is confirmed. While empty, the page shows the launch price without a deadline.
 - `[TODO: confirm recommended specs]` and `[TODO: confirm]` for Windows RAM and free disk guidance. Verify against a licensed build.
 - `[TODO: confirm delivery date and method before launch]`. Set a real delivery process and timing before taking payment; the current release does not provide immediate licensed access.
 - `[TODO: confirm device replacement process.]` after end-to-end activation testing.
@@ -58,16 +59,17 @@ Every purchase CTA has adjacent microcopy: “14-day refund · 2 devices · no s
 | Runs on a Windows 11 PC; no Mac version | Product brief and customer guide. | Confirm supported Windows versions and specs. |
 | Local files are core; YouTube/Twitch/Kick link import beta | Product brief and customer guide. | Do not promote link import as reliable. |
 | Docker advanced/beta; social publishing experimental and off by default | Product brief and customer guide. | Keep outside the main offer. |
-| One-time payment; no Aurora subscription; all 1.x updates; owned version keeps working | Product brief and current offer text. | Align checkout, terms, fulfillment, and release licensing. |
+| Lifetime one-time payment includes all 1.x updates; owned version keeps working | Owner pricing instruction. | Align checkout, terms, fulfillment, and release licensing. |
+| Yearly and Monthly include the app and updates while subscribed | Owner pricing instruction. | Confirm subscription license expiry and cancellation behavior. |
 | Two devices per license | Product brief. | Live activation and device replacement need testing. |
-| 14-day refund | Product brief. | Align Lemon Squeezy setting and refund policy. |
+| 14-day refund on Lifetime purchase and on first subscription payment | Owner pricing instruction. | Align each live product, renewal policy, and refund page. |
 | No Aurora per-minute credits or product minute quota | Product brief; customer guide says no Aurora per-minute billing. | Preserve PC/disk/time/provider limits in adjacent copy. |
 | Customer uses own OpenAI-compatible AI provider key and pays that provider separately | Product brief and customer guide. | Name supported providers only after verified. |
 | Source video files stay on the PC; the stored API key, selected text, and optional frames go directly to the chosen provider | Product brief plus customer guide privacy details. | Validate release network behavior and privacy policy. |
 | Footage must be owned or authorized | Product brief and customer guide. | Keep beside link-import references. |
 | Licensed download and live activation not yet ready | `docs/licensing.md` release guard and current customer guide. | Replace warning only after live fulfillment passes. |
 
-The live checkout URL in `landing/config.js` is based on the owner's explicit confirmation that it is a Live-mode link. It does not establish that the licensed product is ready for delivery.
+All checkout URLs in `landing/config.js` are empty until the three live products are configured. The previous single lifetime checkout URL was removed; none of the new checkout flows has been tested.
 
 ## Complete TODO inventory in published pages
 
@@ -75,9 +77,9 @@ The live checkout URL in `landing/config.js` is based on the owner's explicit co
 
 - `[TODO: confirm recommended specs]`
 - `[TODO: confirm delivery date and method before launch]`
-- `[TODO: price]`
 - `[TODO: replace form action and enable the button.]`
 - `[TODO: confirm]`
+- `[TODO: confirm whether switching is available, whether prior payments count toward the lifetime price, and how to change plans.]`
 - `[TODO: confirm device replacement process.]`
 - `[TODO: email]`
 - `[TODO: legal seller name]`
@@ -104,9 +106,13 @@ The live checkout URL in `landing/config.js` is based on the owner's explicit co
 
 ### `landing/refund.html`
 
-- `[TODO: verify the 14-day window in Lemon Squeezy, add the real support email, and obtain legal review before opening checkout.]`
+- `[TODO: verify the 14-day windows for all plans in Lemon Squeezy, add the real support email, and obtain lawyer review before opening checkout.]`
+- `[TODO: confirm whether later renewal payments are refundable.]`
+- `[TODO: lawyer review]`
 - `[TODO: support email]`
 - `[TODO: confirm whether buyers can request refunds directly through Lemon Squeezy and state the expected response and processing times.]`
+- `[TODO: confirm installed-app behavior after subscription expiry]`
+- `[TODO: confirm cancellation instructions and any required renewal notice.]`
 - `[TODO: verify that license deactivation is automatic or performed reliably by the seller.]`
 - `[TODO: your legal name]`
 - `[TODO: your support email]`
@@ -118,20 +124,23 @@ The live checkout URL in `landing/config.js` is based on the owner's explicit co
 - `[TODO: have a qualified lawyer review these terms, add the seller’s legal name, address, governing law, and effective date before accepting payments.]`
 - `[TODO: your legal name]`
 - `[TODO: your support email]`
-- `[TODO: price]`
 - `[TODO: confirm the exact edition and whether commercial use is included.]`
+- `[TODO: lawyer review]`
 - `[TODO: describe reset/replacement process and any limits]`
-- `[TODO: test key delivery and activation limits before sale.]`
+- `[TODO: test key delivery, subscription status checks, and activation limits before sale.]`
 - `[TODO: obtain product-specific legal and payment-provider review before offering link import.]`
 - `[TODO: describe the final supported providers and the exact data sent.]`
-- `[TODO: confirm offline use, reinstall/activation after 1.x, and the exact support period.]`
+- `[TODO: confirm installed-app behavior after subscription expiry]`
+- `[TODO: confirm cancellation route, renewal notices, offline use, reinstall/activation, and support period.]`
 - `[TODO: legal review of warranty, liability, and consumer-rights wording.]`
+- `[TODO: confirm treatment of later renewals and required consumer rights.]`
 - `[TODO: confirm how existing customers will be notified of material changes.]`
 - `[TODO: email]`
 
 ### `landing/thanks/index.html`
 
 - `[TODO: confirm delivery timing and method before accepting payment.]`
+- `[TODO: confirm subscription cancellation route and installed-app behavior after expiry.]`
 - `[TODO: add the verified licensed-release download link before sales open.]`
 - `[TODO: confirm minimum RAM and free disk space before sales open.]`
 - `[TODO: support email]`
