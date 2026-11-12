@@ -25,5 +25,23 @@ section[id]{scroll-margin-top:76px}
 @keyframes flow-arrow{0%,28%,100%{transform:translateY(-3px);opacity:.5}47%,76%{transform:translateY(4px);opacity:1}}
 @keyframes clip-arrive{0%,33%,100%{transform:translateY(9px);opacity:.7;box-shadow:none}53%,78%{transform:translateY(0);opacity:1;box-shadow:0 0 22px #c5ff7024}}
 @media(min-width:700px) and (max-width:1199px){.hero-grid{grid-template-columns:1fr;gap:45px}.hero h1{max-width:690px;font-size:clamp(56px,8vw,72px)}.hero-demo{max-width:650px}}
+@media(max-width:699px){
+  .section{padding:64px 0}
+  .hero{padding:58px 0 64px}
+  .hero .lead{line-height:1.5}
+  .hero .cta-note,.hero .delivery-note{font-size:13px}
+  .hero .delivery-note{margin-top:14px}
+  h2{font-size:clamp(32px,9vw,42px)}
+  .section-head{margin-bottom:26px}
+  .section-head>p:last-child,.section-intro{font-size:16px;line-height:1.55}
+  .process-list li,.ownership-list article{grid-template-columns:1fr;gap:8px;padding:20px 0}
+  .process-list h3,.ownership-list h3{font-size:21px}
+  .process-list p,.ownership-list p{line-height:1.55}
+  .price-card li{font-size:15px;line-height:1.5}
+  .price-card .cta-note{display:none}
+  .offer-caveat{font-size:14px}
+  .faq-list p{font-size:16px;line-height:1.55}
+  .site-footer{padding-bottom:48px}
+}
 @media(max-width:420px){.demo-flow{gap:10px;padding:16px}.demo-source{min-height:112px}.demo-outputs{gap:12px}}
 @media(prefers-reduced-motion:reduce){.demo-bar,.demo-arrow,.demo-outputs>div{animation:none;transform:none;opacity:1;box-shadow:none}.button:active{transform:none}}
